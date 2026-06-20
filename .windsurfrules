@@ -1,0 +1,25 @@
+# Leohang Illustrations Skill
+
+When generating article illustrations for Chinese content:
+
+## Visual Rules
+- 16:9 horizontal, pure white background, black hand-drawn line art, sparse red/orange/blue Chinese annotations
+- Subject 40-60% of canvas, at least 35% whitespace
+- One image = one core metaphor or structure
+- No PPT, no cute cartoon, no gradients/shadows, no title in top-left corner
+
+## Character: Leohang
+Young man, short black hair, rectangular black-framed glasses (always visible, core identifier), black high-collar zip-up jacket, black trousers, white sneakers. Focused, calm, hands-on engineer. Must perform the core action — not decorative.
+
+## Workflow
+1. Read article → identify cognitive anchors (key judgments, turning points, loops, contrasts)
+2. Output shot list: 4-8 images, each with theme/core meaning/structure type/Leohang action/labels
+3. Generate individually with structure type + fresh metaphor + Leohang bearing core action
+4. QA check: glasses visible, white bg, not PPT-like, sparse labels, fresh metaphor
+
+## 8 Structure Types
+Workflow | System Partial | Before/After | Character State | Concept Metaphor | Method Layering | Map Route | Mini Comic Strip
+
+## Metaphor Method
+Abstract concept → physical action + low-tech object + Leohang bears the action.
+Never replicate known compositions. Always invent fresh metaphors from the current article.

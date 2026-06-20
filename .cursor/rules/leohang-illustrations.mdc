@@ -1,0 +1,44 @@
+---
+description: Generate Leohang-style Chinese article illustrations. Use when the user asks for article illustrations, shot lists, or image generation for Chinese content.
+globs: ["*.md", "*.txt"]
+alwaysApply: false
+---
+
+# Leohang Illustrations Skill
+
+Generate 16:9 horizontal hand-drawn article illustrations for Chinese content using the Leohang IP character.
+
+## Visual DNA
+
+- Pure white background. No texture, gradient, shadow, or paper feel.
+- Black hand-drawn line art: thin, slightly wobbly pen lines.
+- Generous whitespace: subject ~40-60%, at least 35% blank.
+- Sparse Chinese handwritten annotations: max 5-8 spots, 2-8 chars each.
+- One image = one core action/structure/state/metaphor.
+- Colors: Black (main), Orange (flow/path/arrows), Red (warnings/problems/results), Blue (supplementary notes/system state). Blue is optional.
+
+## Character: Leohang
+
+Young man, short black hair, **rectangular black-framed glasses** (core identifier, must be visible in every image), black high-collar zip-up jacket, black trousers, white sneakers. Hand-drawn line art, slightly exaggerated proportions. Focused, calm, hands-on engineer. Must perform the core conceptual action, not decorate.
+
+## 8 Structure Types
+
+Workflow | System Partial | Before/After | Character State | Concept Metaphor | Method Layering | Map Route | Mini Comic Strip
+
+Pick one per image. Don't mix.
+
+## Metaphor Method
+
+1. Convert abstract concept → physical action (stuck, leaking, sorting, fermenting, opening, folding)
+2. Convert system structure → low-tech object (broken machine, cardboard box, funnel, well, ladder)
+3. Make Leohang bear the action — not standing beside, but inside/on top of/operating the metaphor
+
+## Absolute Don'ts
+
+No PPT, no commercial illustration, no cute cartoon, no formal flowchart, no course slides, no complex architecture diagram, no gradients/shadows/textures, no type-title in top-left corner, no mascot or emoji-pack feel. Never replicate known compositions.
+
+## QA Checklist
+
+Must pass: 16:9, white bg, Leohang present + bearing core action, glasses visible, fresh metaphor, sparse readable labels, correct color usage, not PPT-like, not too full.
+
+Fail signals: title in top-left, glasses missing, looks like PPT/flowchart, too many elements, text too long, background not white, too similar to old examples.
