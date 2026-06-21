@@ -27,7 +27,7 @@
 ### 一键安装
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/leohang-illustrations/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhangsan1989707/leohang-illustrations/main/install.sh | bash
 ```
 
 脚本会自动检测你使用的编辑器，将对应文件安装到正确位置。
@@ -39,7 +39,7 @@ curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/leohang-illustrations
 **Claude Code / Codex / QoderWork**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/leohang-illustrations.git
+git clone https://github.com/zhangsan1989707/leohang-illustrations.git
 cd leohang-illustrations
 # Codex
 cp -R . "${CODEX_HOME:-$HOME/.codex}/skills/leohang-illustrations"
@@ -50,21 +50,21 @@ cp -R . "$HOME/.qoderworkcn/skills/leohang-illustrations"
 **Cursor**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/leohang-illustrations.git
+git clone https://github.com/zhangsan1989707/leohang-illustrations.git
 cp leohang-illustrations/.cursor/rules/leohang-illustrations.mdc .cursor/rules/
 ```
 
 **VS Code + GitHub Copilot**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/leohang-illustrations.git
+git clone https://github.com/zhangsan1989707/leohang-illustrations.git
 cp leohang-illustrations/.github/copilot-instructions.md .github/
 ```
 
 **Windsurf**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/leohang-illustrations.git
+git clone https://github.com/zhangsan1989707/leohang-illustrations.git
 cp leohang-illustrations/.windsurfrules .
 ```
 

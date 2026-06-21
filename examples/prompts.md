@@ -1,11 +1,21 @@
 # Prompt Examples
 
-下面这些 prompt 可以直接复制到 Codex 里使用。
+## 跨编辑器说明
+
+以下示例使用 Codex 的 `$skill-name` 调用语法（`...`）。在其他编辑器中：
+
+- **QoderWork**：直接描述需求即可，系统会自动匹配 skill，例如"为这篇中文文章设计并生成 5 张怪诞正文配图"
+- **Cursor**：在对话中直接输入 prompt，skill 规则会自动加载
+- **Copilot / Windsurf**：同上，规则文件已包含在项目中
+
+以下 prompt 去掉 `Use $leohang-illustrations` 前缀后，在所有编辑器中通用。
+
+---
 
 ## 只做配图规划
 
 ```text
-Use $leohang-illustrations 先不要生图。
+先不要生图。
 请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
 每张图写清楚：
 - 放在哪个段落后
@@ -22,7 +32,7 @@ Use $leohang-illustrations 先不要生图。
 ## 文章正文配图
 
 ```text
-Use $leohang-illustrations 把下面这篇文章生成 4 张怪诞正文配图。
+把下面这篇文章生成 4 张怪诞正文配图。
 要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
 每张图只讲一个核心结构，不要做 PPT 信息图，不要可爱卡通。
 
@@ -32,7 +42,7 @@ Use $leohang-illustrations 把下面这篇文章生成 4 张怪诞正文配图�
 ## 长文配图策略
 
 ```text
-Use $leohang-illustrations 给这篇长文做配图策略。
+给这篇长文做配图策略。
 不要平均配图，只挑认知锚点：核心判断、输入输出闭环、前后对比、常见坑、承接路径。
 默认 6-8 张，先输出 shot list，不要生成图片。
 
@@ -42,7 +52,7 @@ Use $leohang-illustrations 给这篇长文做配图策略。
 ## 单个观点生成一张图
 
 ```text
-Use $leohang-illustrations 为这个观点生成一张 16:9 正文配图：
+为这个观点生成一张 16:9 正文配图：
 
 信任不是喊出来的，而是一块证据一块证据铺过去。
 
@@ -53,7 +63,7 @@ Use $leohang-illustrations 为这个观点生成一张 16:9 正文配图：
 ## 工作流主题
 
 ```text
-Use $leohang-illustrations 为"把一条原始素材加工成流量、信任、转化三种内容"生成一张图。
+为"把一条原始素材加工成流量、信任、转化三种内容"生成一张图。
 不要画正式流程图，不要复刻一鱼多吃旧案例。
 请重新发明一个新的低科技隐喻，让 Leohang 参与核心动作。
 ```
@@ -61,7 +71,7 @@ Use $leohang-illustrations 为"把一条原始素材加工成流量、信任、�
 ## 改图：去掉标题
 
 ```text
-Use $leohang-illustrations 帮我编辑这张图。
+帮我编辑这张图。
 去掉左上角的"Workflow / 流程图"标题和下划线，其他内容保持不变。
 不要新增任何文字或物件。
 ```
@@ -69,7 +79,7 @@ Use $leohang-illustrations 帮我编辑这张图。
 ## 改图：增强 Leohang 参与感
 
 ```text
-Use $leohang-illustrations 这张图方向对，但 Leohang 有点像装饰。
+这张图方向对，但 Leohang 有点像装饰。
 请保持核心意思不变，重生成一版：让 Leohang 成为真正推动结构运转的人。
 画面更怪一点，但仍然纯白、清爽、少字。
 ```
@@ -77,7 +87,7 @@ Use $leohang-illustrations 这张图方向对，但 Leohang 有点像装饰。
 ## 生成一组风格样片
 
 ```text
-Use $leohang-illustrations 输出 5 个不同主题的正文配图效果。
+输出 5 个不同主题的正文配图效果。
 主题分别覆盖：信息过载、产品验证、内容复利、一人公司、信任建立。
 每张单独生成，不要拼成一张。
 ```

@@ -8,7 +8,15 @@ REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 INSTALLED=()
 
 detect_and_install() {
-  # Claude Code / Codex
+  # Claude Code
+  if [ -d "$HOME/.claude" ] || [ -n "${CLAUDE_HOME:-}" ]; then
+    local target="${CLAUDE_HOME:-$HOME/.claude}/skills/leohang-illustrations"
+    mkdir -p "$(dirname "$target")"
+    rsync -a --exclude='.git' --exclude='.DS_Store' "$REPO_DIR/" "$target/"
+    INSTALLED+=("Claude Code → $target")
+  fi
+
+  # Codex
   if [ -n "${CODEX_HOME:-}" ] || [ -d "$HOME/.codex" ]; then
     local target="${CODEX_HOME:-$HOME/.codex}/skills/leohang-illustrations"
     mkdir -p "$(dirname "$target")"
@@ -56,6 +64,7 @@ if [ ${#INSTALLED[@]} -eq 0 ]; then
   echo "  ⚠  No supported AI editor detected in this directory."
   echo ""
   echo "  Manual options:"
+  echo "    Claude Code: cp -R . \"\${CLAUDE_HOME:-\$HOME/.claude}/skills/leohang-illustrations\""
   echo "    Codex:     cp -R . \"\${CODEX_HOME:-\$HOME/.codex}/skills/leohang-illustrations\""
   echo "    QoderWork: cp -R . \"\$HOME/.qoderworkcn/skills/leohang-illustrations\""
   echo "    Cursor:    cp .cursor/rules/leohang-illustrations.mdc <project>/.cursor/rules/"
